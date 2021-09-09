@@ -1,0 +1,35 @@
+.header {
+  .navbar-brand {
+    height: 61px;
+    width: 209px;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    .nav-item {
+      a {
+        color: map-get($theme-colors, "primary");
+        font: normal normal 600 18px/24px Montserrat;
+        padding-right: 27px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .right-box {
+      margin-left: auto;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    p {
+      font: normal normal normal 12px/24px Roboto;
+      color: #d6d6d6;
+      line-height: 5px;
+    }
+    a {
+      letter-spacing: 1.56px;
+      color: map-get($theme-colors, "primary");
+      font: normal normal 600 12px/24px Montserrat;
+      margin-right: 14px;
+    }
+  }
+}

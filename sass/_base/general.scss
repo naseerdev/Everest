@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+h1 , h2 , h3, h4 ,p , li{
+    color: map-get($theme-colors, "primary");
+    font-family: Montserrat;
+}
+a {
+    text-decoration: none;
+}
+footer a, footer p {
+    color: $footer-text-color;
+}

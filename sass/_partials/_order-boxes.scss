@@ -1,0 +1,33 @@
+.order-boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  font-family: Montserrat;
+  margin-bottom: 100px;
+  @media screen and (max-width: 992px) {
+    grid-template-columns: auto ;
+  }
+  .main-box {
+    padding: 30px 10px;
+    background-color: $order-box-bg;
+    
+    .inner-item {
+      display: grid;
+      grid-template-columns: auto auto;
+      div:nth-of-type(1) {
+          text-align: center;
+      }
+    }
+    img {
+      width: 80px;
+      height: 60px;
+    }
+    h4 {
+        font: normal normal 600 22px/35px Montserrat;
+        margin-bottom: 0;
+    }
+    p {
+        font: normal normal normal 13px/20px Montserrat;
+    }
+  }
+}

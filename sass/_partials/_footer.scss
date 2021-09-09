@@ -1,0 +1,86 @@
+footer {
+  background-color: $footer-bg;
+  color: $footer-text-color;
+  padding-top: 25px;
+  font-family: Montserrat;
+  p {
+    font: normal normal normal 13px/20px Montserrat;
+  }
+  .site-link {
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  a {
+    &:hover {
+      color: $footer-text-color;
+      cursor: pointer;
+    }
+  }
+  h6 {
+    margin-top: 18px;
+  }
+  .recent-post {
+    p {
+      margin-bottom: 5px;
+      a {
+        color: $footer-recent-post;
+        font: normal normal normal 12px/22px Montserrat;
+      }
+    }
+  }
+  .news-letter-form {
+    @media screen and (max-width: 992px) {
+        justify-content: center;
+      }
+    input {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      padding: 0.335rem 0.75rem;
+      border: 0;
+    }
+    button {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      font-size: 12px;
+      background-color: $footer-recent-post;
+      color: $product-detail-bg;
+      border: 0;
+      &:hover {
+        background-color: $footer-recent-post;
+      }
+    }
+  }
+  .contact-form {
+    button {
+      float: right;
+      font-size: 12px;
+      background-color: $footer-recent-post;
+      color: $product-detail-bg;
+      border: 0;
+      padding: 0.335rem 1.75rem;
+      &:hover {
+        background-color: $footer-recent-post;
+      }
+    }
+  }
+  .copyright-box {
+      a {
+        color: $white-color;
+        font: normal normal normal 12px/22px Montserrat;
+        position: relative;
+        &:hover {
+            color: $white-color;
+        }
+        &::after {
+            position: absolute;
+            right: 0;
+            height: 22px;
+            top: 6px;
+            width: 1px;
+            content: '';
+            background-color: #4B4B4B
+        }
+      }
+  }
+}

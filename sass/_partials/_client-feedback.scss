@@ -1,0 +1,81 @@
+.client-feedback {
+  padding: 100px 0;
+  h2 {
+    font: normal normal 600 35px/45px Montserrat;
+    margin-left: 100px;
+    @media screen and (max-width: 991px) {
+        margin-left: unset;
+      }
+  }
+  img {
+    width: 160px;
+    height: 160px;
+  }
+  .feedback-container {
+    max-width: 700px;
+    margin: auto;
+    background-color: $product-detail-bg;
+    padding: 50px;
+  }
+  .slider-item {
+    .row {
+      div:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+      }
+      span {
+        font-size: 67px;
+        line-height: 1;
+        font-weight: bold;
+        position: absolute;
+        left: 18px;
+        top: -7px;
+        
+      }
+      p {
+        font: normal normal normal 16px/20px Montserrat;
+        margin-top: 25px;
+      }
+      p:last-of-type {
+        font: normal normal normal 12px/10px Montserrat;
+        margin-top: 0px;
+        margin-bottom: 0;
+      }
+      h4 {
+        font: normal normal bold 16px/20px Montserrat;
+      }
+    }
+    .col-md-8 {
+      padding-left: 54px;
+    }
+  }
+  .next-prev-btn {
+    img {
+      width: 40px;
+    }
+  }
+  .feedback-btns {
+    div {
+      display: inline-block;
+      position: absolute;
+      left: -10%;
+      z-index: 2;
+      top: 20%;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        left: 0;
+        top: 30%;
+      }
+      img {
+        width: 30px;
+      }
+    }
+    .next-feedback {
+      left: unset;
+      right: -10%;
+      @media screen and (max-width: 768px) {
+        right: 0;
+      }
+    }
+  }
+}

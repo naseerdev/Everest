@@ -1,0 +1,67 @@
+.printer-filament {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  @media screen and (max-width: 992px) {
+    grid-template-columns: auto;
+  }
+  .first-box {
+    background-color: $first-box;
+    a {
+      background-color: $second-box;
+    }
+  }
+  .second-box {
+    background-color: $second-box;
+    a {
+      background-color: $second-box-btn;
+    }
+  }
+  h3 {
+    font: normal normal 800 22px/35px Montserrat;
+    color: $btn-text;
+    margin-bottom: 0;
+  }
+  a {
+    color: $btn-text;
+    font: normal normal normal 12px/34px Montserrat;
+    padding: 10px 25px;
+    border-radius: 4px;
+  }
+  p {
+    font: normal normal normal 12px/14px Montserrat;
+    color: $btn-text;
+    margin-bottom: 0;
+  }
+  .price {
+    font: normal normal 600 16px/42px Montserrat;
+    color: $btn-text;
+    margin-bottom: 0;
+  }
+  img {
+    width: 273px;
+    height: 218px;
+    @media screen and (max-width: 600px) {
+      margin-left: auto;
+    }
+  }
+  .d-grid {
+    grid-template-columns: auto auto;
+    padding-left: 70px;
+    @media screen and (max-width: 1129px) {
+      padding-left: 0;
+    }
+    @media screen and (max-width: 992px) {
+      padding-left: 10%;
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: auto;
+      padding-top: 30px;
+    }
+  }
+  .inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
